@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+</head>
+<body>
+    <!-- Bài 4 -->
+
+    <input type="number" id="num1">
+    <span></span>
+    <input type="number" id="num2">
+    <span></span>
+    <button style="color: brown; border-radius: 5px;" onclick="hienThi()" > Nhấn </button>
+    <h4 id="ketQua" ></h4>
+    <script>
+        function hienThi() {
+            let a = +document.getElementById("num1").value;
+            let b = +document.getElementById("num2").value;
+            let c = a + b;
+            document.getElementById("ketQua").innerHTML = " Tổng là " + c;
+        }
+    </script>
+</body>
+</html>
